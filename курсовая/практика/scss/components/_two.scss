@@ -1,0 +1,75 @@
+.two {
+   background: rgba(0, 0, 0, 0.2);
+   height: 100%;
+   padding-bottom: 50px;
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   &__slider {
+      display: flex;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+   }
+   &__slid {
+      width: 340px;
+      height: 240px;
+      margin-top: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-left: 40px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px;
+      transition: all 0.3s ease 0s;
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 0 20px black;
+      a {
+         color: darkred;
+         margin-top: 5px;
+         cursor: pointer;
+         font-weight: bold;
+      }
+      a,
+      h3 {
+         z-index: 10;
+      }
+      a:hover {
+         text-decoration: underline;
+      }
+   }
+   &__slid:hover {
+      transform: scale(1.1);
+   }
+   .one {
+      background-image: url("../../img/laja.jpg");
+   }
+   .two2 {
+      background-image: url("../../img/snowb.jpg");
+   }
+   .tree {
+      background-image: url("../../img/mauntins.jpg");
+   }
+}
+@media (max-width: 900px) {
+   .two {
+      &__slid {
+         margin-right: 20px;
+      }
+   }
+}
+@media (max-width: 600px) {
+   .two {
+      &__slid {
+         width: 270px;
+         height: 170px;
+      }
+   }
+}

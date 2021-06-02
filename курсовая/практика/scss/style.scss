@@ -1,0 +1,15 @@
+@import "normalize";
+@import "fonts";
+@import "variables";
+@import "vendor";
+@import "global";
+@import "overall";
+
+/* components imports */
+@import "./components/burger";
+@import "./components/first";
+@import "./components/two";
+@import "./components/inf";
+@import "./components/top-tyr";
+@import "./components/brend";
+@import "./components/footer";
